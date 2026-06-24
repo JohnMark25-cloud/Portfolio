@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Mark C. De Los Santos — Computer Science Graduate &amp; Web Developer</title>
+  <meta name="description" content="Portfolio of John Mark C. De Los Santos — Computer Science graduate from the Philippines, web developer, and aspiring cloud solutions engineer. Skilled in Python, JavaScript, Java, C#, WordPress, Node.js, Firebase, and Godot Engine.">
+  <meta name="keywords" content="John Mark De Los Santos, Computer Science Graduate, Web Developer, Cloud Solutions Engineer, Philippines Developer, Portfolio, WordPress Developer, Game Developer">
+  <meta name="author" content="John Mark C. De Los Santos">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="John Mark C. De Los Santos — Portfolio">
+  <meta property="og:description" content="Computer Science graduate, web developer, and aspiring cloud solutions engineer from the Philippines.">
+  <meta property="og:image" content="assets/img/og-cover.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="John Mark C. De Los Santos — Portfolio">
+  <meta name="twitter:description" content="Computer Science graduate, web developer, and aspiring cloud solutions engineer from the Philippines.">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%2306080D%22/><text x=%2250%22 y=%2266%22 font-size=%2255%22 text-anchor=%22middle%22 fill=%22%233B82F6%22 font-family=%22monospace%22>J</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "John Mark C. De Los Santos",
+    "jobTitle": "Computer Science Graduate, Web Developer",
+    "description": "Computer Science graduate from the Philippines specializing in web development and aspiring toward cloud solutions engineering.",
+    "knowsAbout": ["Web Development", "Cloud Computing", "Networking", "Cybersecurity", "Game Development", "WordPress"],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Antique – Tario-Lim Memorial Campus"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Decorative background grid -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Go to top">
+        <span class="nav-logo-bracket">&lt;</span>JM<span class="nav-logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Primary">
+        <a href="#about"><span class="nav-num">01</span>about</a>
+        <a href="#skills"><span class="nav-num">02</span>skills</a>
+        <a href="#experience"><span class="nav-num">03</span>experience</a>
+        <a href="#projects"><span class="nav-num">04</span>projects</a>
+        <a href="#achievements"><span class="nav-num">05</span>achievements</a>
+        <a href="#contact"><span class="nav-num">06</span>contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <span class="status-pill" title="Open to opportunities">
+          <span class="status-dot" aria-hidden="true"></span> available for work
+        </span>
+        <a class="btn btn-ghost btn-sm" href="assets/JohnMarkDeLosSantos_Resume.pdf" download>résumé</a>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow mono"><span class="eyebrow-dot"></span> portfolio.init() — Antique, Philippines</p>
+
+          <h1 class="hero-title">
+            John Mark C.<br>
+            <span class="text-accent">De Los Santos</span>
+          </h1>
+
+          <p class="hero-role mono" id="typed-role" aria-live="polite"></p>
+
+          <p class="hero-desc">
+            Newly graduated Computer Science student turning logic into working software 
+            from gamified learning platforms to client websites. Currently aiming my next
+            move at <strong>cloud infrastructure</strong> and <strong>scalable backend systems</strong>.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View my work</a>
+            <a href="#contact" class="btn btn-outline">Get in touch</a>
+          </div>
+
+          <div class="hero-social" aria-label="Social links">
+            <a href="https://github.com/JohnMark25-cloud" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.69-1.28-1.69-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.74.4-1.25.72-1.54-2.56-.29-5.25-1.28-5.25-5.71 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.84 1.18 3.1 0 4.44-2.7 5.42-5.27 5.7.41.36.78 1.07.78 2.15 0 1.56-.01 2.81-.01 3.19 0 .3.21.66.79.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/john-mark-de-los-santos-6aa9a1412" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+            </a>
+            <a href="mailto:johnmark.delossantos@example.com" aria-label="Send an email">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M22 6.5 12.6 13a1 1 0 0 1-1.2 0L2 6.5M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-terminal" data-reveal data-reveal-delay="1">
+          <div class="term-window">
+            <div class="term-bar">
+              <span class="term-dot term-dot-r"></span>
+              <span class="term-dot term-dot-y"></span>
+              <span class="term-dot term-dot-g"></span>
+              <span class="term-title mono">johnmark@antique:~</span>
+            </div>
+            <div class="term-body mono">
+              <p><span class="term-prompt">$</span> whoami</p>
+              <p class="term-out">john-mark-de-los-santos</p>
+              <p><span class="term-prompt">$</span> cat role.txt</p>
+              <p class="term-out">CS Graduate · Web Developer<br>Aspiring Cloud Solutions Engineer</p>
+              <p><span class="term-prompt">$</span> cat stack.json</p>
+              <pre class="term-out">{
+  "languages": ["Python","JS","Java","C++"],
+  "web": ["Node.js","Express","WordPress"],
+  "cloud_db": ["Firebase","Firestore","MySQL"],
+  "tools": ["Git","Linux","Godot Engine"]
+}</pre>
+              <p><span class="term-prompt">$</span> ./deploy_career.sh</p>
+              <p class="term-out term-success">&gt; status: <strong>ready to ship</strong> ✓</p>
+              <p class="term-cursor-line"><span class="term-prompt">$</span> <span class="term-cursor" aria-hidden="true"></span></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <span class="mono">scroll</span>
+        <span class="scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section-label mono" data-reveal>// 01 — about</p>
+        <h2 class="section-title" data-reveal>Building things that work,<br>then learning why they should work <em>better</em>.</h2>
+
+        <div class="about-grid">
+          <div class="about-text" data-reveal>
+            <p>
+              I'm a Bachelor of Science in Computer Science graduate from the
+              <strong>University of Antique – Tario-Lim Memorial Campus</strong>, College of
+              Computing and Information Sciences. My path into tech started with curiosity
+              about how websites and games are put together, and it's grown into a genuine
+              interest in the systems underneath them — servers, networks, and the
+              infrastructure that keeps software running at scale.
+            </p>
+            <p>
+              I spend most of my time across <strong>software development</strong> and
+              <strong>web development</strong>, but I'm actively expanding into
+              <strong>cloud computing</strong>, <strong>networking</strong>, and
+              <strong>cybersecurity</strong> — the layers that make applications reliable
+              and safe, not just functional. On the side, I build small games, which keeps
+              my problem-solving sharp in ways that web projects sometimes don't.
+            </p>
+            <p>
+              My thesis project, <strong>Algorithm Quest</strong>, sits at the intersection
+              of two things I care about: education and game design. It's a gamified
+              learning platform that turns Data Structures and Algorithms — usually one of
+              the most intimidating subjects in a CS curriculum — into something students
+              actually want to engage with.
+            </p>
+          </div>
+
+          <div class="about-stats" data-reveal data-reveal-delay="1">
+            <div class="stat-card">
+              <span class="stat-num mono">200<span class="stat-unit">hrs</span></span>
+              <span class="stat-label">OJT internship at VirtuosoMaster</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num mono">4<span class="stat-unit">-person</span></span>
+              <span class="stat-label">thesis research team led through full SDLC</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num mono">6<span class="stat-unit">+</span></span>
+              <span class="stat-label">languages &amp; frameworks in active use</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num mono">1<span class="stat-unit">thesis</span></span>
+              <span class="stat-label">gamified platform shipped end-to-end</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="interest-tags" data-reveal aria-label="Areas of interest">
+          <span class="tag">Software Development</span>
+          <span class="tag">Cloud Computing</span>
+          <span class="tag">Networking</span>
+          <span class="tag">Cybersecurity</span>
+          <span class="tag">Web Development</span>
+          <span class="tag">Game Development</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <p class="section-label mono" data-reveal>// 02 — education</p>
+        <h2 class="section-title" data-reveal>Academic background</h2>
+
+        <div class="edu-card" data-reveal>
+          <div class="edu-mark mono">2021–2025</div>
+          <div class="edu-body">
+            <h3>Bachelor of Science in Computer Science</h3>
+            <p class="edu-school">University of Antique – Tario-Lim Memorial Campus, College of Computing and Information Sciences</p>
+            <p class="edu-desc">
+              Coursework spanning data structures and algorithms, software engineering,
+              database systems, networking fundamentals, and web technologies. Completed a
+              thesis on gamified educational software and a 200-hour on-the-job training
+              program in professional web development.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <p class="section-label mono" data-reveal>// 03 — skills</p>
+        <h2 class="section-title" data-reveal>System status: technical stack</h2>
+        <p class="section-sub" data-reveal>A live-style readout of the languages, frameworks, and tools I work with most.</p>
+
+        <div class="status-board" data-reveal>
+
+          <div class="status-group">
+            <h3 class="status-group-title mono">// languages</h3>
+            <ul class="status-list">
+              <li><span class="status-led led-on"></span>Python</li>
+              <li><span class="status-led led-on"></span>JavaScript</li>
+              <li><span class="status-led led-on"></span>Java</li>
+              <li><span class="status-led led-on"></span>C#</li>
+              <li><span class="status-led led-on"></span>GDScript</li>
+              <li><span class="status-led led-on"></span>HTML &amp; CSS</li>
+            </ul>
+          </div>
+
+          <div class="status-group">
+            <h3 class="status-group-title mono">// web &amp; cms</h3>
+            <ul class="status-list">
+              <li><span class="status-led led-on"></span>WordPress</li>
+              <li><span class="status-led led-on"></span>Elementor</li>
+              <li><span class="status-led led-on"></span>Node.js</li>
+              <li><span class="status-led led-on"></span>Express.js</li>
+            </ul>
+          </div>
+
+          <div class="status-group">
+            <h3 class="status-group-title mono">// data &amp; cloud</h3>
+            <ul class="status-list">
+              <li><span class="status-led led-on"></span>MySQL</li>
+              <li><span class="status-led led-on"></span>Firebase</li>
+              <li><span class="status-led led-on"></span>Firestore</li>
+            </ul>
+          </div>
+
+          <div class="status-group">
+            <h3 class="status-group-title mono">// tools &amp; platforms</h3>
+            <ul class="status-list">
+              <li><span class="status-led led-on"></span>Git</li>
+              <li><span class="status-led led-on"></span>GitHub</li>
+              <li><span class="status-led led-on"></span>Linux</li>
+              <li><span class="status-led led-on"></span>Godot Engine</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <p class="section-label mono" data-reveal>// 04 — experience</p>
+        <h2 class="section-title" data-reveal>Internship &amp; practical experience</h2>
+
+        <div class="timeline">
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <h3>WordPress Developer Intern</h3>
+                <span class="mono timeline-date">200 hrs · OJT</span>
+              </div>
+              <p class="timeline-org">VirtuosoMaster — Iloilo City, Philippines</p>
+              <ul class="timeline-list">
+                <li>Built and customized client websites using <strong>WordPress</strong> and <strong>Elementor</strong>, translating design briefs into responsive, production-ready pages.</li>
+                <li>Implemented responsive web design practices across desktop, tablet, and mobile breakpoints to ensure consistent UX across devices.</li>
+                <li>Performed website customization including theme adjustments, custom layouts, plugin configuration, and on-page performance tweaks.</li>
+                <li>Collaborated with supervisors on real client requirements, building professional communication and workflow habits alongside technical skills.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <h3>Thesis Researcher &amp; Lead Developer</h3>
+                <span class="mono timeline-date">2024–2025</span>
+              </div>
+              <p class="timeline-org">University of Antique – Tario-Lim Memorial Campus</p>
+              <ul class="timeline-list">
+                <li>Led a four-person research team through the design, development, and evaluation of <strong>Algorithm Quest</strong>, a gamified DSA learning platform.</li>
+                <li>Authored full thesis documentation including manuscript chapters, SUS evaluation reports, and a player manual.</li>
+                <li>Ran usability testing with three evaluator groups (students, IT experts, DSA instructors) using the System Usability Scale.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section-label mono" data-reveal>// 05 — projects</p>
+        <h2 class="section-title" data-reveal>Featured projects</h2>
+        <p class="section-sub" data-reveal>A mix of academic research, freelance web work, and personal builds.</p>
+
+        <div class="project-grid">
+
+          <article class="project-card project-card-featured" data-reveal>
+            <div class="project-card-top">
+              <span class="project-tag mono">thesis project</span>
+              <div class="project-links">
+                <a href="#" aria-label="View Algorithm Quest source code" class="icon-link">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18c-4.51 2-5-2-7-2m14 4v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 5.77 5.07 5.07 0 0 0 19.91 2S18.73 1.65 16 3.48a13.38 13.38 0 0 0-7 0C6.27 1.65 5.09 2 5.09 2A5.07 5.07 0 0 0 5 5.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 19.13V23"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>Algorithm Quest</h3>
+            <p class="project-sub">A Gamified Learning Platform for Teaching Data Structures and Algorithms</p>
+            <p class="project-desc">
+              My undergraduate thesis: an educational game designed to make Data Structures
+              and Algorithms approachable through interactive gameplay. Core DSA concepts —
+              stacks, queues, trees, sorting, and searching — are reframed as quests and
+              challenges, with progression mechanics that reward understanding over rote
+              memorization. Evaluated by students, IT experts, and DSA instructors using the
+              System Usability Scale, with results landing in the "Good" usability range
+              across all three groups.
+            </p>
+            <ul class="project-stack mono">
+              <li>Godot Engine</li><li>GDScript</li><li>Game Design</li><li>SUS Evaluation</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-reveal data-reveal-delay="1">
+            <div class="project-card-top">
+              <span class="project-tag mono">freelance</span>
+              <div class="project-links">
+                <a href="#" aria-label="View project link" class="icon-link">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 3h7v7m0-7L10 14M21 14v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h6"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>Sentiment analysis</h3>
+            <p class="project-sub">AI-assisted restaurant review platform</p>
+            <p class="project-desc">
+              The review website integrates an AI-driven sentiment analysis layer that automatically evaluates written customer reviews and provides businesses with an at-a-glance understanding of customer sentiment, eliminating the need for manual review and analysis of feedback.
+            </p>
+            <ul class="project-stack mono">
+              <li>JavaScript</li><li>Node.js</li><li>AI API Integration</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-reveal data-reveal-delay="2">
+            <div class="project-card-top">
+              <span class="project-tag mono">personal</span>
+              <div class="project-links">
+                <a href="#" aria-label="View project link" class="icon-link">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 3h7v7m0-7L10 14M21 14v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h6"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>Battlestar Arcade</h3>
+            <p class="project-sub">Browser-based arcade shooter</p>
+            <p class="project-desc">
+              A lightweight arcade-style game built for the browser, focused on tight firing
+              mechanics and responsive controls. Restructured between single-file and
+              multi-file architectures to compare maintainability trade-offs in small game
+              projects.
+            </p>
+            <ul class="project-stack mono">
+              <li>JavaScript</li><li>HTML5 Canvas</li><li>Game Logic</li>
+            </ul>
+          </article>
+
+          <article class="project-card project-card-placeholder" data-reveal data-reveal-delay="3">
+            <div class="project-card-top">
+              <span class="project-tag mono">in progress</span>
+            </div>
+            <h3>Cloud Deployment Project</h3>
+            <p class="project-sub">Upcoming — infrastructure &amp; deployment focus</p>
+            <p class="project-desc">
+              A planned project applying cloud fundamentals — containerization, CI/CD, and
+              managed services — to a real deployed application. Details to be added as the
+              project progresses.
+            </p>
+            <ul class="project-stack mono">
+              <li>Cloud Computing</li><li>TBD</li>
+            </ul>
+          </article>
+
+          <article class="project-card project-card-placeholder" data-reveal data-reveal-delay="4">
+            <div class="project-card-top">
+              <span class="project-tag mono">in progress</span>
+            </div>
+            <h3>Network Security Lab</h3>
+            <p class="project-sub">Upcoming — cybersecurity &amp; networking focus</p>
+            <p class="project-desc">
+              A hands-on project exploring network configuration and security hardening, in
+              line with my growing interest in cybersecurity. Full write-up coming soon.
+            </p>
+            <ul class="project-stack mono">
+              <li>Networking</li><li>Security</li><li>TBD</li>
+            </ul>
+          </article>
+
+          <article class="project-card project-card-placeholder" data-reveal data-reveal-delay="5">
+            <div class="project-card-top">
+              <span class="project-tag mono">concept</span>
+            </div>
+            <h3>Your Next Idea Here</h3>
+            <p class="project-sub">Reserved slot for a future build</p>
+            <p class="project-desc">
+              This space is intentionally open — for the next project, experiment, or
+              collaboration. Check back soon, or get in touch if you'd like to build it
+              together.
+            </p>
+            <ul class="project-stack mono">
+              <li>?</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ACHIEVEMENTS & CERTS ===== -->
+    <section class="section section-alt" id="achievements">
+      <div class="container">
+        <p class="section-label mono" data-reveal>// 06 — achievements</p>
+        <h2 class="section-title" data-reveal>Achievements &amp; certifications</h2>
+
+        <div class="achieve-grid">
+          <div class="achieve-card" data-reveal>
+            <div class="achieve-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12ZM8.21 13.89 7 23l5-3 5 3-1.21-9.12"/></svg>
+            </div>
+            <h3>Thesis Defense — Passed</h3>
+            <p>Successfully defended "Algorithm Quest: A Gamified Learning Platform for Teaching Data Structures and Algorithms" before a faculty panel, including formal usability evaluation.</p>
+          </div>
+
+          <div class="achieve-card" data-reveal data-reveal-delay="1">
+            <div class="achieve-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg>
+            </div>
+            <h3>200-Hour OJT Completion</h3>
+            <p>Completed a full 200-hour on-the-job training program at VirtuosoMaster, Iloilo City, in professional WordPress and Elementor development.</p>
+          </div>
+
+          <div class="achieve-card" data-reveal data-reveal-delay="2">
+            <div class="achieve-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 3v18h18M7 14l4-4 3 3 5-6"/></svg>
+            </div>
+            <h3>"Good" SUS Usability Score</h3>
+            <p>Algorithm Quest achieved an overall weighted average in the "Good" range on the System Usability Scale across students, IT experts, and DSA instructors.</p>
+          </div>
+
+          <div class="achieve-card achieve-card-placeholder" data-reveal data-reveal-delay="3">
+            <div class="achieve-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M5 12h14"/></svg>
+            </div>
+            <h3>Certifications — In Progress</h3>
+            <p>Currently pursuing certifications in cloud platforms and networking fundamentals to formalize my transition toward cloud solutions engineering. Updates coming soon.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CAREER GOALS ===== -->
+    <section class="section" id="goals">
+      <div class="container goals-container">
+        <p class="section-label mono" data-reveal>// 07 — career goals</p>
+        <h2 class="section-title" data-reveal>Where I'm headed next</h2>
+
+        <div class="goals-grid">
+          <div class="goal-card" data-reveal>
+            <span class="goal-index mono">a.</span>
+            <h3>Grow into Cloud Solutions Engineering</h3>
+            <p>Deepen my hands-on experience with cloud platforms, deployment pipelines, and scalable architecture — turning current curiosity into a professional specialty.</p>
+          </div>
+          <div class="goal-card" data-reveal data-reveal-delay="1">
+            <span class="goal-index mono">b.</span>
+            <h3>Strengthen networking &amp; security fundamentals</h3>
+            <p>Build practical, certifiable expertise in networking and cybersecurity so I can design systems that are not just functional, but resilient.</p>
+          </div>
+          <div class="goal-card" data-reveal data-reveal-delay="2">
+            <span class="goal-index mono">c.</span>
+            <h3>Ship production-grade web applications</h3>
+            <p>Move beyond client sites and academic projects into full-stack products with real users, real data, and real uptime expectations.</p>
+          </div>
+          <div class="goal-card" data-reveal data-reveal-delay="3">
+            <span class="goal-index mono">d.</span>
+            <h3>Keep building games on the side</h3>
+            <p>Continue developing in Godot as a creative outlet that keeps my problem-solving and systems-thinking sharp outside of work projects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <p class="section-label mono" data-reveal>// 08 — contact</p>
+        <h2 class="section-title" data-reveal>Let's build something.</h2>
+        <p class="section-sub" data-reveal>
+          Open to junior developer roles, cloud-track internships, and freelance web
+          projects. The fastest way to reach me is email — I read every message.
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-info" data-reveal>
+            <a class="contact-row" href="mailto:johnmarkdelos25@gmail.com">
+              <span class="contact-row-label mono">email</span>
+              <span class="contact-row-value">johnmarkdelos25@gmail.com</span>
+            </a>
+            <a class="contact-row" href="https://github.com/JohnMark25-cloud" target="_blank" rel="noopener noreferrer">
+              <span class="contact-row-label mono">github</span>
+              <span class="contact-row-value">github.com/JohnMark25-cloud</span>
+            </a>
+            <a class="contact-row" href="https://www.linkedin.com/in/john-mark-de-los-santos-6aa9a1412/" target="_blank" rel="noopener noreferrer">
+              <span class="contact-row-label mono">linkedin</span>
+              <span class="contact-row-value">linkedin.com/in/johnmarkdelossantos</span>
+            </a>
+            <a class="contact-row" href="assets/JohnMarkDeLosSantos_Resume.pdf" download>
+              <span class="contact-row-label mono">résumé</span>
+              <span class="contact-row-value">download PDF ↓</span>
+            </a>
+            <div class="contact-row contact-row-static">
+              <span class="contact-row-label mono">location</span>
+              <span class="contact-row-value">Laua-an Antique, Philippines</span>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form" data-reveal data-reveal-delay="1" novalidate>
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+              <span class="form-error" id="err-name" role="alert"></span>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+              <span class="form-error" id="err-email" role="alert"></span>
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <span class="form-error" id="err-message" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span class="btn-text">Send message</span>
+            </button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="mono">© <span id="year"></span> John Mark C. De Los Santos. Built from scratch, deployed with intent.</p>
+      <a href="#hero" class="footer-top">back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
